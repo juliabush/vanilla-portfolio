@@ -43,36 +43,58 @@
         <span>LinkedIn</span>
       </div>
     </div>
-    <div class="projects-area">
-      <div class="project-bubble" style="--size: 240px; --x: 20%; --y: 25%">
-        <svg viewBox="0 0 100 100" class="bubble-label">
-          <defs>
-            <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
-          </defs>
-          <text>
-            <textPath href="#bubbleArc" startOffset="30%" text-anchor="middle">
-              CRUD Whiteboard
-            </textPath>
-          </text>
-        </svg>
+    <div class="project-bubble-wrapper" onclick="openModal()">
+      <div class="projects-area">
+        <div class="project-bubble" style="--size: 240px; --x: 20%; --y: 25%">
+          <svg viewBox="0 0 100 100" class="bubble-label">
+            <defs>
+              <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
+            </defs>
+            <text>
+              <textPath
+                href="#bubbleArc"
+                startOffset="30%"
+                text-anchor="middle"
+              >
+                CRUD Whiteboard
+              </textPath>
+            </text>
+          </svg>
+        </div>
       </div>
-      <div class="project-bubble" style="--size: 340px; --x: 16%; --y: 79%">
-        <img
-          src="/project-gifs/asktarotanything.gif"
-          alt="bubble gif"
-          class="bubble-gif"
-        />
-        <svg viewBox="0 0 100 100" class="bubble-label">
-          <defs>
-            <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
-          </defs>
-          <text>
-            <textPath href="#bubbleArc" startOffset="67%" text-anchor="middle">
-              Tarot AI App
-            </textPath>
-          </text>
-        </svg>
+      <!-- Start of Tarot Project Bubble -->
+      <div class="project-bubble-wrapper" onclick="openModal()">
+        <div class="project-bubble" style="--size: 340px; --x: 16%; --y: 79%">
+          <img
+            src="/project-gifs/asktarotanything.gif"
+            alt="bubble gif"
+            class="bubble-gif"
+          />
+          <svg viewBox="0 0 100 100" class="bubble-label">
+            <defs>
+              <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
+            </defs>
+            <text>
+              <textPath
+                href="#bubbleArc"
+                startOffset="67%"
+                text-anchor="middle"
+              >
+                Tarot AI App
+              </textPath>
+            </text>
+          </svg>
+        </div>
       </div>
+      <!-- Tarot modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2>Tarot AI App</h2>
+          <p>Your modal content here.</p>
+        </div>
+      </div>
+      <!--Start of 3D Food Market Bubble-->
       <div class="project-bubble" style="--size: 280px; --x: 87%; --y: 25%">
         <svg viewBox="0 0 100 100" class="bubble-label">
           <defs>
