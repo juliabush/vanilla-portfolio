@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/face_lookup/(.*)",
+      "dest": "/face_lookup/$1"
+    }
+  ]
+}
