@@ -134,6 +134,47 @@ body {
 .project-bubble:nth-child(4) {
   animation-duration: 4.5s;
 }
+.project-bubble {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Positioning based on your custom vars */
+  left: var(--x);
+  top: var(--y);
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+  overflow: visible; /* critical */
+}
+
+.bubble-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffe7af;
+}
+
+.bubble-label {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  height: 140%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.bubble-label text {
+  font-size: 6px;
+  font-weight: bold;
+  fill: #333;
+}
 
 @media (max-width: 768px) {
   .face-container {
