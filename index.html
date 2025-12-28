@@ -17,9 +17,11 @@
       ></div>
     </div>
 
-    <div class="face-label">Hi, I'm Julia Bush</div>
-    <div class="face-description">
-      Full-Stack Developer, check out my projects. Would love to get in touch!
+    <div class="intro">
+      <div class="face-label">Hi, I'm Julia Bush</div>
+      <div class="face-description">
+        Full-Stack Developer, check out my projects. Would love to get in touch!
+      </div>
     </div>
     <div class="social-row">
       <div class="social-item">
@@ -45,7 +47,14 @@
     </div>
     <div class="project-bubble-wrapper" onclick="openModal()">
       <div class="projects-area">
-        <div class="project-bubble" style="--size: 240px; --x: 20%; --y: 25%">
+        <div
+          class="project-bubble one"
+          data-x-desktop="76%"
+          data-y-desktop="48%"
+          data-x-mobile="18%"
+          data-y-mobile="88%"
+          style="--size: 260px"
+        >
           <svg viewBox="0 0 100 100" class="bubble-label">
             <defs>
               <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
@@ -64,7 +73,14 @@
       </div>
       <!-- Start of Tarot Project Bubble -->
       <div class="project-bubble-wrapper" onclick="openModal()">
-        <div class="project-bubble" style="--size: 420px; --x: 12%; --y: 77%">
+        <div
+          class="project-bubble two"
+          data-x-desktop="88%"
+          data-y-desktop="78%"
+          data-x-mobile="74%"
+          data-y-mobile="16%"
+          style="--size: 420px"
+        >
           <iframe
             src="https://tarot-finale.vercel.app/"
             frameborder="0"
@@ -95,7 +111,14 @@
         </div>
       </div>
       <!--Start of 3D Food Market Bubble-->
-      <div class="project-bubble" style="--size: 280px; --x: 87%; --y: 25%">
+      <div
+        class="project-bubble three"
+        data-x-desktop="88%"
+        data-y-desktop="23%"
+        data-x-mobile="20%"
+        data-y-mobile="12%"
+        style="--size: 320px"
+      >
         <svg viewBox="0 0 100 100" class="bubble-label">
           <defs>
             <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
@@ -107,7 +130,14 @@
           </text>
         </svg>
       </div>
-      <div class="project-bubble" style="--size: 260px; --x: 74%; --y: 53%">
+      <div
+        class="project-bubble four"
+        data-x-desktop="14%"
+        data-y-desktop="53%"
+        data-x-mobile="84%"
+        data-y-mobile="92%"
+        style="--size: 260px"
+      >
         <img src="./project-gifs/asteroids.gif" alt="" class="bubble-gif" />
         <svg viewBox="0 0 100 100" class="bubble-label">
           <defs>

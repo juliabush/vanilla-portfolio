@@ -82,13 +82,6 @@ body {
   color: #333;
 }
 
-.projects-ares {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  margin-top: 40px;
-}
-
 .project-bubble {
   position: absolute;
   width: var(--size);
@@ -222,7 +215,15 @@ body {
   font-size: 24px;
 }
 
-@media (max-width: 768px) {
+.intro {
+  text-align: center;
+}
+
+@media (max-width: 608px) {
+  .face-container {
+    width: 220px;
+    height: 220px;
+  }
   .face-container {
     width: 250px;
     height: 250px;
@@ -230,5 +231,40 @@ body {
 
   .face-label {
     font-size: 20px;
+  }
+
+  .project-bubble {
+    width: calc(var(--size) * 0.5);
+    height: calc(var(--size) * 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .face-container {
+    width: 180px;
+    height: 180px;
+  }
+  .project-bubble {
+    width: calc(var(--size) * 0.4);
+    height: calc(var(--size) * 0.4);
+  }
+  .project-bubble.one {
+    --x: 80%;
+    --y: 68%;
+  }
+
+  .project-bubble.two {
+    --x: 40%;
+    --y: 38%;
+  }
+
+  .project-bubble.three {
+    --x: 50%;
+    --y: 28%;
+  }
+
+  .project-bubble.four {
+    --x: 50%;
+    --y: 58%;
   }
 }
