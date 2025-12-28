@@ -23,6 +23,7 @@
         Full-Stack Developer, check out my projects. Would love to get in touch!
       </div>
     </div>
+
     <div class="social-row">
       <div class="social-item">
         <a href="assets/resume.pdf" target="_blank">
@@ -45,72 +46,76 @@
         <span>LinkedIn</span>
       </div>
     </div>
-    <div class="project-bubble-wrapper" onclick="openModal()">
-      <div class="projects-area">
-        <div
-          class="project-bubble one"
-          data-x-desktop="76%"
-          data-y-desktop="48%"
-          data-x-mobile="18%"
-          data-y-mobile="88%"
-          style="--size: 260px"
-        >
-          <svg viewBox="0 0 100 100" class="bubble-label">
-            <defs>
-              <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
-            </defs>
-            <text>
-              <textPath
-                href="#bubbleArc"
-                startOffset="30%"
-                text-anchor="middle"
-              >
-                Blog Aggregator
-              </textPath>
-            </text>
-          </svg>
-        </div>
+
+    <!-- Bubble 1 -->
+    <div class="project-bubble-wrapper" onclick="openModal(this)">
+      <div
+        class="project-bubble one"
+        data-x-desktop="76%"
+        data-y-desktop="48%"
+        data-x-mobile="18%"
+        data-y-mobile="88%"
+        style="--size: 260px"
+      >
+        <svg viewBox="0 0 100 100" class="bubble-label">
+          <defs>
+            <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
+          </defs>
+          <text>
+            <textPath href="#bubbleArc" startOffset="30%" text-anchor="middle">
+              Blog Aggregator
+            </textPath>
+          </text>
+        </svg>
       </div>
-      <!-- Start of Tarot Project Bubble -->
-      <div class="project-bubble-wrapper" onclick="openModal()">
-        <div
-          class="project-bubble two"
-          data-x-desktop="88%"
-          data-y-desktop="78%"
-          data-x-mobile="74%"
-          data-y-mobile="18%"
-          style="--size: 420px"
-        >
-          <iframe
-            src="https://tarot-finale.vercel.app/"
-            frameborder="0"
-            class="frame"
-          ></iframe>
-          <svg viewBox="0 0 100 100" class="bubble-label">
-            <defs>
-              <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
-            </defs>
-            <text>
-              <textPath
-                href="#bubbleArc"
-                startOffset="67%"
-                text-anchor="middle"
-              >
-                Tarot AI App
-              </textPath>
-            </text>
-          </svg>
-        </div>
-      </div>
-      <!-- Tarot modal -->
-      <div id="modal" class="modal">
+
+      <div class="modal">
         <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
+          <span class="close" onclick="closeModal(event)">&times;</span>
+          <h2>Blog Aggregator</h2>
+          <p>Your modal content here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bubble 2 -->
+    <div class="project-bubble-wrapper" onclick="openModal(this)">
+      <div
+        class="project-bubble two"
+        data-x-desktop="88%"
+        data-y-desktop="78%"
+        data-x-mobile="74%"
+        data-y-mobile="18%"
+        style="--size: 420px"
+      >
+        <iframe
+          src="https://tarot-finale.vercel.app/"
+          frameborder="0"
+          class="frame"
+        ></iframe>
+        <svg viewBox="0 0 100 100" class="bubble-label">
+          <defs>
+            <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
+          </defs>
+          <text>
+            <textPath href="#bubbleArc" startOffset="67%" text-anchor="middle">
+              Tarot AI App
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(event)">&times;</span>
           <h2>Tarot AI App</h2>
           <p>Your modal content here.</p>
         </div>
       </div>
-      <!--Start of 3D Food Market Bubble-->
+    </div>
+
+    <!-- Bubble 3 -->
+    <div class="project-bubble-wrapper" onclick="openModal(this)">
       <div
         class="project-bubble three"
         data-x-desktop="88%"
@@ -135,6 +140,18 @@
           </text>
         </svg>
       </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(event)">&times;</span>
+          <h2>Pokedex</h2>
+          <p>Your modal content here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bubble 4 -->
+    <div class="project-bubble-wrapper" onclick="openModal(this)">
       <div
         class="project-bubble four"
         data-x-desktop="7%"
@@ -155,8 +172,19 @@
           </text>
         </svg>
       </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(event)">&times;</span>
+          <h2>Asteroids.py</h2>
+          <p>Your modal content here.</p>
+        </div>
+      </div>
     </div>
-    <div
+
+    <!-- Bubble 5 -->
+    <div class="project-bubble-wrapper" onclick="openModal(this)">
+      <div
         class="project-bubble five"
         data-x-desktop="12%"
         data-y-desktop="23%"
@@ -176,7 +204,16 @@
           </text>
         </svg>
       </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(event)">&times;</span>
+          <h2>static_site_generator.py</h2>
+          <p>Your modal content here.</p>
+        </div>
+      </div>
     </div>
+
     <script src="main.js" defer></script>
     <script src="./face_lookup/face-tracker.js" defer></script>
   </body>

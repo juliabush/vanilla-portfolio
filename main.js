@@ -10,12 +10,13 @@ document.querySelectorAll(".project-bubble").forEach((bubble) => {
     bubble.classList.remove("hover");
   });
 });
-function openModal() {
-  document.getElementById("modal").style.display = "flex";
+function openModal(wrapper) {
+  wrapper.querySelector(".modal").style.display = "flex";
 }
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
+function closeModal(e) {
+  e.stopPropagation();
+  e.target.closest(".modal").style.display = "none";
 }
 
 function applyBubbleLayout() {

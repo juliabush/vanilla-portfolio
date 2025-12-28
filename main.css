@@ -218,6 +218,9 @@ body {
 .intro {
   text-align: center;
 }
+.frame {
+  pointer-events: none;
+}
 
 @media (max-width: 608px) {
   .face-container {
