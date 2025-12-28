@@ -248,23 +248,14 @@ body {
     width: calc(var(--size) * 0.4);
     height: calc(var(--size) * 0.4);
   }
-  .project-bubble.one {
-    --x: 80%;
-    --y: 68%;
-  }
-
-  .project-bubble.two {
-    --x: 40%;
-    --y: 38%;
-  }
-
-  .project-bubble.three {
-    --x: 50%;
-    --y: 28%;
-  }
-
-  .project-bubble.four {
-    --x: 50%;
-    --y: 58%;
+  .bubble-label {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 140%;
+    overflow: visible;
+    pointer-events: none;
   }
 }
