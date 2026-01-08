@@ -252,6 +252,16 @@ body {
   width: 28px;
   height: 28px;
 }
+.modal-content {
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  cursor: pointer;
+}
 
 @media (max-width: 608px) {
   .face-container {
