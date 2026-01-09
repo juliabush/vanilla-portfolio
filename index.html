@@ -78,24 +78,35 @@
         <div class="modal-content two-col">
           <span class="close" onclick="closeModal(event)">&times;</span>
 
-          <div class="modal-left">
-            <iframe
-              src="https://github.com/juliabush/blog-aggregator"
-              frameborder="0"
-            ></iframe>
+          <div class="modal-left modal-image">
+            <img src="./assets/blog-aggregator - Edited.png" frameborder="0" />
           </div>
 
           <div class="modal-right">
             <h2>Blog Aggregator</h2>
 
             <div class="modal-actions">
-              <a href="YOUR_SITE_URL" target="_blank">View Website</a>
-              <a href="YOUR_GITHUB_URL" target="_blank">
+              <a
+                href="https://github.com/juliabush/blog-aggregator"
+                target="_blank"
+              >
                 <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
 
-            <p>Your project description goes here.</p>
+            <p>
+              A command-line–driven, multi-user blog aggregator backend that
+              collects and organizes posts from RSS feeds in real time. Users
+              can register, log in, add and follow feeds, and browse aggregated
+              posts through a structured set of commands, while a background
+              process continuously scrapes and updates content. The system is
+              designed with a modular command architecture, authenticated
+              workflows, and a relational data model to ensure data integrity
+              and scalability. Feed data and posts are automatically
+              deduplicated and kept up to date, allowing users to consume
+              content from multiple sources in one place without manual
+              tracking.
+            </p>
           </div>
         </div>
       </div>
@@ -143,13 +154,33 @@
             <h2>Tarot AI App</h2>
 
             <div class="modal-actions">
-              <a href="YOUR_SITE_URL" target="_blank">View Website</a>
-              <a href="YOUR_GITHUB_URL" target="_blank">
+              <a href="https://tarot-finale.vercel.app/" target="_blank"
+                >View Website</a
+              >
+              <a href="https://github.com/juliabush/ai-tarot" target="_blank">
                 <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
 
-            <p>Your project description goes here.</p>
+            <p>
+              A minimal, interactive Tarot reading web application that allows
+              users to ask questions, draw Tarot cards, and receive AI-generated
+              interpretations in real time. Each reading is dynamically
+              personalized by randomly selecting cards from a full Tarot deck
+              and embedding them into the prompt, creating a unique experience
+              on every interaction. The application emphasizes performance and
+              user experience through server-to-client streaming. AI responses
+              are streamed incrementally using HTTP event streams and rendered
+              with a custom typewriter effect, allowing text to appear as it is
+              generated rather than waiting for full completion. This approach
+              significantly reduces perceived latency and makes interactions
+              feel responsive and engaging. Built with a modern React and
+              Next.js architecture, the project cleanly separates UI components
+              from business logic and reusable hooks. It demonstrates practical
+              use of streaming APIs, prompt construction, and client-side state
+              management, while maintaining a lightweight, focused design that
+              highlights real-time interactivity over unnecessary complexity.
+            </p>
           </div>
         </div>
       </div>
@@ -197,13 +228,33 @@
             <h2>Pokedex</h2>
 
             <div class="modal-actions">
-              <a href="YOUR_SITE_URL" target="_blank">View Website</a>
-              <a href="YOUR_GITHUB_URL" target="_blank">
+              <a href="https://pokedex-q6xy.vercel.app/" target="_blank"
+                >View Website</a
+              >
+              <a href="https://github.com/juliabush/pokedex" target="_blank">
                 <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
 
-            <p>Your project description goes here.</p>
+            <p>
+              An interactive Pokédex application that combines real-time 3D
+              graphics with a stateful backend to simulate Pokémon capture
+              mechanics. Users select Pokémon, interact with a fully animated 3D
+              Pokéball, and attempt captures that follow probability rules based
+              on each Pokémon’s rarity. The frontend focuses on precise state
+              management and visual feedback, using a finite phase model to
+              coordinate animations, user input, and reveal timing without
+              invalid states. Subtle animation details, such as shake intensity
+              and reveal sequencing, are tightly coupled to game logic to create
+              a responsive, game-like experience in the browser. The backend
+              exposes custom endpoints to manage capture logic, inspection, and
+              persistence using an in-memory state model. Pokémon data is
+              fetched from the PokéAPI and cached after successful captures to
+              avoid redundant requests. The system is containerized and deployed
+              with a production-ready setup, demonstrating end-to-end
+              integration between interactive 3D UI, backend game logic, and
+              cloud infrastructure.
+            </p>
           </div>
         </div>
       </div>
@@ -247,13 +298,33 @@
             <h2>Asteroids</h2>
 
             <div class="modal-actions">
-              <a href="YOUR_SITE_URL" target="_blank">View Website</a>
-              <a href="YOUR_GITHUB_URL" target="_blank">
+              <a href="https://asteroid-sepia.vercel.app/" target="_blank"
+                >View Website</a
+              >
+              <a href="https://github.com/juliabush/asteroid" target="_blank">
                 <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
 
-            <p>Your project description goes here.</p>
+            <p>
+              A modern, multiplayer take on the classic Asteroids arcade game
+              that separates game simulation from rendering. The core game loop
+              runs as a headless Pygame simulation on the server, while
+              real-time game state is streamed to a browser-based client over
+              WebSockets for responsive, low-latency gameplay. The backend
+              manages player connections, input state, physics, collisions, and
+              game progression within a shared simulation loop, allowing
+              multiple players to interact in the same game world
+              simultaneously. By running Pygame in a headless environment, the
+              system remains compatible with cloud infrastructure while
+              preserving deterministic game logic on the server. The frontend
+              renders the streamed game state using HTML5 Canvas and a
+              requestAnimationFrame loop, ensuring smooth animation synchronized
+              with the browser’s refresh rate. Deployed with a containerized
+              backend on AWS EC2 and a static frontend on Vercel, the project
+              demonstrates real-time networking, server-authoritative game
+              design, and production-ready deployment practices.
+            </p>
           </div>
         </div>
       </div>
@@ -291,8 +362,8 @@
           <span class="close" onclick="closeModal(event)">&times;</span>
 
           <div class="modal-left">
-            <iframe
-              src="https://github.com/juliabush/static-site-generator"
+            <img
+            src="./assets/ssg-screenhot - Edited.png"
               frameborder="0"
             ></iframe>
           </div>
@@ -301,13 +372,31 @@
             <h2>Static Site Generator</h2>
 
             <div class="modal-actions">
-              <a href="YOUR_SITE_URL" target="_blank">View Website</a>
-              <a href="YOUR_GITHUB_URL" target="_blank">
+              <a
+                href="https://github.com/juliabush/static-site-generator"
+                target="_blank"
+              >
                 <img src="assets/github.png" alt="GitHub" />
               </a>
             </div>
 
-            <p>Your project description goes here.</p>
+            <p>
+              A lightweight, backend static site generator written entirely in
+              Python that converts Markdown files into complete HTML pages
+              without relying on third-party libraries. The project implements a
+              custom Markdown parser and an HTML node tree to transform
+              structured text into valid, reusable HTML components. The
+              generator recursively walks a content directory, applies a shared
+              HTML template, and preserves the original folder structure when
+              producing output files. This approach enables scalable site
+              generation from simple Markdown content while keeping build logic
+              explicit and easy to reason about. Designed with correctness and
+              maintainability in mind, the project includes comprehensive unit
+              tests covering Markdown parsing and HTML rendering logic. It
+              demonstrates core backend concepts such as parsing, tree-based
+              rendering, recursive file processing, and test-driven development
+              in a clean, dependency-free Python codebase.
+            </p>
           </div>
         </div>
       </div>
