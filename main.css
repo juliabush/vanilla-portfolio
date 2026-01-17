@@ -99,7 +99,9 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 .project-bubble.hover {
@@ -165,6 +167,10 @@ body {
   height: 140%;
   overflow: visible;
   pointer-events: none;
+}
+
+.tarot-label {
+  top: -80px;
 }
 
 .bubble-label text {
