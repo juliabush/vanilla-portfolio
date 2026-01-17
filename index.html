@@ -396,6 +396,79 @@
         </div>
       </div>
     </div>
+     <div class="project-bubble-wrapper" onclick="openModal(this)">
+      <div
+        class="project-bubble three"
+        data-x-desktop="24%"
+        data-y-desktop="83%"
+        data-x-mobile="20%"
+        data-y-mobile="16%"
+        style="--size: 300px"
+      >
+        <iframe
+          src=""
+          frameborder="0"
+          class="frame"
+        ></iframe>
+        <svg viewBox="0 0 100 100" class="bubble-label">
+          <defs>
+            <path id="bubbleArc" d="M 10,50 A 40,40 0 0 1 90,50" />
+          </defs>
+          <text>
+            <textPath href="#bubbleArc" startOffset="63%" text-anchor="middle">
+              Open Source Contributions
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="modal">
+        <div class="modal-content two-col">
+          <span class="close" onclick="closeModal(event)">&times;</span>
+
+          <div class="modal-left">
+            <iframe
+              src="https://pokedex-q6xy.vercel.app/"
+              frameborder="0"
+            ></iframe>
+          </div>
+
+          <div class="modal-right">
+            <h2>Pokedex</h2>
+
+            <div class="modal-actions">
+              <a href="https://pokedex-q6xy.vercel.app/" target="_blank"
+                >View Website</a
+              >
+              <a href="https://github.com/juliabush/pokedex" target="_blank">
+                <img src="assets/github.png" alt="GitHub" />
+              </a>
+            </div>
+
+            <p>
+              An interactive Pokédex application that combines real-time 3D
+              graphics with a stateful backend to simulate Pokémon capture
+              mechanics. Users select Pokémon, interact with a fully animated 3D
+              Pokéball, and attempt captures that follow probability rules based
+              on each Pokémon’s rarity. The frontend focuses on precise state
+              management and visual feedback, using a finite phase model to
+              coordinate animations, user input, and reveal timing without
+              invalid states. Subtle animation details, such as shake intensity
+              and reveal sequencing, are tightly coupled to game logic to create
+              a responsive, game-like experience in the browser. The backend
+              exposes custom endpoints to manage capture logic, inspection, and
+              persistence using an in-memory state model. Pokémon data is
+              fetched from the PokéAPI and cached after successful captures to
+              avoid redundant requests. The system is containerized and deployed
+              with a production-ready setup, demonstrating end-to-end
+              integration between interactive 3D UI, backend game logic, and
+              cloud infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <script src="main.js" defer></script>
     <script src="./face_lookup/face-tracker.js" defer></script>
