@@ -173,6 +173,12 @@ body {
   top: -80px;
 }
 
+.github {
+  padding-top: 1.5rem;
+  transform: scale(1.2);
+  transform-origin: top center;
+}
+
 .bubble-label text {
   font-size: 6px;
   font-weight: bold;
