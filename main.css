@@ -322,4 +322,9 @@ body {
     overflow: visible;
     pointer-events: none;
   }
+  .github {
+    padding-top: 1.5rem;
+    transform: scale(0.55);
+    transform-origin: top center;
+  }
 }
