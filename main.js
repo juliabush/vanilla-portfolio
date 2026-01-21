@@ -11,12 +11,17 @@ document.querySelectorAll(".project-bubble").forEach((bubble) => {
   });
 });
 function openModal(wrapper) {
-  wrapper.querySelector(".modal").style.display = "flex";
+  const modal = wrapper.querySelector(".modal");
+  modal.style.display = "flex";
+
+  modal.addEventListener("click", closeModal);
+  modal.querySelector(".modal-content").addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
 }
 
 function closeModal(e) {
-  e.stopPropagation();
-  e.target.closest(".modal").style.display = "none";
+  e.currentTarget.style.display = "none";
 }
 
 function applyBubbleLayout() {
@@ -25,11 +30,11 @@ function applyBubbleLayout() {
   document.querySelectorAll(".project-bubble").forEach((bubble) => {
     bubble.style.setProperty(
       "--x",
-      bubble.dataset[isMobile ? "xMobile" : "xDesktop"]
+      bubble.dataset[isMobile ? "xMobile" : "xDesktop"],
     );
     bubble.style.setProperty(
       "--y",
-      bubble.dataset[isMobile ? "yMobile" : "yDesktop"]
+      bubble.dataset[isMobile ? "yMobile" : "yDesktop"],
     );
   });
 }
