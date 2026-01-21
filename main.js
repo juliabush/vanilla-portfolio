@@ -21,7 +21,9 @@ function openModal(wrapper) {
 }
 
 function closeModal(e) {
-  e.currentTarget.style.display = "none";
+  e.stopPropagation();
+  const modal = e.target.closest(".modal");
+  if (modal) modal.style.display = "none";
 }
 
 function applyBubbleLayout() {
