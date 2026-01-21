@@ -265,7 +265,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
 }
 
 .modal-actions img {
@@ -281,6 +280,55 @@ body {
   top: 12px;
   right: 22px;
   cursor: pointer;
+}
+
+.modal-right {
+  padding: 1.5rem 2rem;
+  max-width: 480px;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+}
+
+.modal-right h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.modal-actions a img {
+  width: 28px;
+  /* height: 28px; */
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+
+.modal-actions a img:hover {
+  opacity: 1;
+}
+
+.modal-right h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.modal-right ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.modal-right li {
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+  color: #333;
+}
+.flex_row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 @media (max-width: 608px) {
