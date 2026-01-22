@@ -328,7 +328,18 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
-
+@media (max-width: 1000px) {
+  .github {
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+}
+@media (min-width: 608px) and (max-width: 800px) {
+  .github {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+}
 @media (max-width: 608px) {
   .face-container {
     width: 220px;
@@ -341,6 +352,10 @@ body {
 
   .face-label {
     font-size: 20px;
+  }
+  .github {
+    transform: scale(0.75);
+    transform-origin: top center;
   }
 }
 
