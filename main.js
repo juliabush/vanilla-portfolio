@@ -13,6 +13,7 @@ document.querySelectorAll(".project-bubble").forEach((bubble) => {
 function openModal(wrapper) {
   const modal = wrapper.querySelector(".modal");
   modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 
   modal.addEventListener("click", closeModal);
   modal.querySelector(".modal-content").addEventListener("click", (e) => {
@@ -24,6 +25,7 @@ function closeModal(e) {
   e.stopPropagation();
   const modal = e.target.closest(".modal");
   if (modal) modal.style.display = "none";
+  document.body.style.overflow = "";
 }
 
 function applyBubbleLayout() {
