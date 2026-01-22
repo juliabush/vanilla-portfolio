@@ -292,7 +292,6 @@ body {
 }
 
 .modal-right h2 {
-  margin: 0 0 0.5rem 0;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -326,7 +325,7 @@ body {
 .flex_row {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .modal {
   overflow-y: auto;
@@ -336,7 +335,27 @@ body {
   max-height: 90vh;
   overflow-y: auto;
 }
-
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.view {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.first-list {
+  margin-bottom: 1.5rem !important;
+}
+.line {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 1rem 0;
+}
+.blog {
+  margin-bottom: 0.5rem;
+}
 @media (max-width: 1000px) {
   .github {
     transform: scale(0.95);
