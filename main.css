@@ -457,7 +457,7 @@ body {
 }
 @media (max-width: 480px) {
   .project-bubble.one {
-    --size: 140px !important;
+    --size: 160px !important;
   }
   .project-bubble.two {
     --size: 200px !important;
@@ -466,7 +466,24 @@ body {
     --size: 200px !important;
   }
   .project-bubble.four {
-    --size: 180px !important;
+    --size: 200px !important;
+  }
+  .project-bubble.five {
+    --size: 140px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 400px) {
+  .project-bubble.one {
+    --size: 140px !important;
+  }
+  .project-bubble.two {
+    --size: 140px !important;
+  }
+  .project-bubble.three {
+    --size: 140px !important;
+  }
+  .project-bubble.four {
+    --size: 140px !important;
   }
   .project-bubble.five {
     --size: 120px !important;
