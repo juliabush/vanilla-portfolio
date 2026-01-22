@@ -420,7 +420,41 @@ body {
     --size: 180px !important;
   }
 }
+@media (min-width: 680px) and (max-width: 880px) {
+  .project-bubble.one {
+    --size: 100px !important;
+  }
+  .project-bubble.two {
+    --size: 100px !important;
+  }
+  .project-bubble.three {
+    --size: 100px !important;
+  }
+  .project-bubble.four {
+    --size: 100px !important;
+  }
+  .project-bubble.five {
+    --size: 100px !important;
+  }
+}
 
+@media (max-width: 680px) {
+  .project-bubble.one {
+    --size: 100px !important;
+  }
+  .project-bubble.two {
+    --size: 100px !important;
+  }
+  .project-bubble.three {
+    --size: 100px !important;
+  }
+  .project-bubble.four {
+    --size: 100px !important;
+  }
+  .project-bubble.five {
+    --size: 100px !important;
+  }
+}
 @media (max-width: 480px) {
   .project-bubble.one {
     --size: 100px !important;
