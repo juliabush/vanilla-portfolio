@@ -28,16 +28,27 @@ function closeModal(e) {
 
 function applyBubbleLayout() {
   const isMobile = window.matchMedia("(max-width: 480px)").matches;
+  const isTablet = window.matchMedia(
+    "(min-width: 481px) and (max-width: 1024px)",
+  ).matches;
 
   document.querySelectorAll(".project-bubble").forEach((bubble) => {
-    bubble.style.setProperty(
-      "--x",
-      bubble.dataset[isMobile ? "xMobile" : "xDesktop"],
-    );
-    bubble.style.setProperty(
-      "--y",
-      bubble.dataset[isMobile ? "yMobile" : "yDesktop"],
-    );
+    let x;
+    let y;
+
+    if (isMobile) {
+      x = bubble.dataset.xMobile;
+      y = bubble.dataset.yMobile;
+    } else if (isTablet) {
+      x = bubble.dataset.xTablet ?? bubble.dataset.xDesktop;
+      y = bubble.dataset.yTablet ?? bubble.dataset.yDesktop;
+    } else {
+      x = bubble.dataset.xDesktop;
+      y = bubble.dataset.yDesktop;
+    }
+
+    bubble.style.setProperty("--x", x);
+    bubble.style.setProperty("--y", y);
   });
 }
 
