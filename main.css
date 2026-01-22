@@ -403,16 +403,15 @@ body {
     max-width: none;
   }
 }
-/* Tablet (iPad / half screen) */
 @media (max-width: 1024px) {
   .project-bubble.one {
-    --size: 100px !important;
+    --size: 200px !important;
   }
   .project-bubble.two {
-    --size: 260px !important;
+    --size: 360px !important;
   }
   .project-bubble.three {
-    --size: 200px !important;
+    --size: 280px !important;
   }
   .project-bubble.four {
     --size: 220px !important;
@@ -422,7 +421,6 @@ body {
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .project-bubble.one {
     --size: 100px !important;
