@@ -374,3 +374,26 @@ body {
     transform-origin: top center;
   }
 }
+@media (max-width: 768px) {
+  .modal-content.two-col {
+    flex-direction: column;
+    width: 95vw;
+    height: auto;
+  }
+
+  .modal-left,
+  .modal-right {
+    width: 100%;
+  }
+
+  .modal-left iframe,
+  .modal-left img {
+    min-height: 240px;
+    height: 40vh;
+  }
+
+  .modal-right {
+    padding: 1rem;
+    max-width: none;
+  }
+}
