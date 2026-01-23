@@ -356,6 +356,39 @@ body {
 .blog {
   margin-bottom: 0.5rem;
 }
+.copy-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: #333;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  opacity: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+  z-index: 10000;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.social-item button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1000px) {
   .github {
     transform: scale(0.95);

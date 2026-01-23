@@ -53,6 +53,22 @@ function applyBubbleLayout() {
     bubble.style.setProperty("--y", y);
   });
 }
+function copyEmail(el) {
+  navigator.clipboard.writeText("j.elizabethbush@gmail.com");
+
+  let toast = document.createElement("div");
+  toast.textContent = "Email copied to clipboard";
+  toast.className = "copy-toast";
+
+  document.body.appendChild(toast);
+
+  requestAnimationFrame(() => toast.classList.add("show"));
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    setTimeout(() => toast.remove(), 300);
+  }, 1500);
+}
 
 window.addEventListener("resize", applyBubbleLayout);
 window.addEventListener("DOMContentLoaded", applyBubbleLayout);
